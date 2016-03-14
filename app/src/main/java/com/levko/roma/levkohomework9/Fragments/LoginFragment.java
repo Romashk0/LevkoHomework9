@@ -81,8 +81,8 @@ public class LoginFragment extends Fragment {
         mLoginEventHandler = (LoginEventHandler) context;
     }
 
-    public RetainInstanceFragment getDataFragment() {
-        return (RetainInstanceFragment) getFragmentManager().findFragmentByTag("headless");
+    public SaveSpecimenFragment getDataFragment() {
+        return (SaveSpecimenFragment) getFragmentManager().findFragmentByTag("headless");
     }
 
 }

@@ -8,7 +8,7 @@ import android.os.Bundle;
 import com.levko.roma.levkohomework9.Fragments.LoginFragment;
 import com.levko.roma.levkohomework9.Fragments.RegisterFragment;
 import com.levko.roma.levkohomework9.Fragments.RegistrationDialogFragment;
-import com.levko.roma.levkohomework9.Fragments.RetainInstanceFragment;
+import com.levko.roma.levkohomework9.Fragments.SaveSpecimenFragment;
 import com.levko.roma.levkohomework9.Interfaces.LoginEventHandler;
 import com.levko.roma.levkohomework9.Interfaces.RegisterEventHandler;
 
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements LoginEventHandler
     }
 
     private void commitHeadlessFragment() {
-        RetainInstanceFragment dataFragment = new RetainInstanceFragment();
+        SaveSpecimenFragment dataFragment = new SaveSpecimenFragment();
         getSupportFragmentManager()
                 .beginTransaction()
                 .add(dataFragment, "headless")
@@ -104,8 +104,8 @@ public class MainActivity extends AppCompatActivity implements LoginEventHandler
         }
     }
 
-    public RetainInstanceFragment getDataFragment() {
-        return (RetainInstanceFragment) getSupportFragmentManager().findFragmentByTag("headless");
+    public SaveSpecimenFragment getDataFragment() {
+        return (SaveSpecimenFragment) getSupportFragmentManager().findFragmentByTag("headless");
     }
 
     @Override

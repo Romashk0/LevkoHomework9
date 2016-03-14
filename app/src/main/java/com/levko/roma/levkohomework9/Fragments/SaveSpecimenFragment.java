@@ -16,7 +16,7 @@ import java.util.HashMap;
 /**
  * Created by roma on 14.03.16.
  */
-public class RetainInstanceFragment extends Fragment {
+public class SaveSpecimenFragment extends Fragment {
 
     private HashMap<String, Account> dataBase;
     private Account current;
